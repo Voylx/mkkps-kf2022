@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Alert, Container, Row, Col } from 'react-bootstrap';
 import { getSummaryData } from '@/api/api';
 import { useAppContext } from '@/context/AppContext';
+import Head from 'next/head';
 
 function Summary() {
     const { state, dispatch } = useAppContext();
