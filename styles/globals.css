@@ -24,3 +24,19 @@ a {
     background: black;
   }
 }
+
+.logo {
+  will-change: filter;
+}
+
+
+.paySelected{filter: drop-shadow(0 0 2em #fd9002fb);}
+
+.bg-y{
+  background: #fff8f0;
+}
+
+.border-y{
+  border :  var(--bs-border-width) var(--bs-border-style) #fd9002fb!important
+  /* border-color: #fd9002fb; */
+}

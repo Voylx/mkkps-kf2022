@@ -1,0 +1,15 @@
+.line {
+    border-bottom: 2px solid rgb(184, 191, 199);
+}
+.linetext {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 10px;
+}
+.linetext:before,
+.linetext:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid rgb(184, 191, 199);
+    margin: auto;
+}
