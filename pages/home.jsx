@@ -59,7 +59,7 @@ function Home() {
     return (
         <>
             <Head>
-                <title>Home</title>
+                <title>MK-KPS for KASET FAIR : Home</title>
             </Head>
             <Container>
                 <div style={{ maxWidth: '400px' }} className="mx-auto">

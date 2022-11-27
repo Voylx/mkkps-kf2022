@@ -2,6 +2,7 @@ import React, { use, useEffect } from 'react';
 import { Container, Alert, Row, Col } from 'react-bootstrap';
 import { useAppContext } from '@/context/AppContext';
 import { getHistoryData } from '@/api/api';
+import Head from 'next/head';
 
 function History() {
     const { state, dispatch } = useAppContext();
@@ -39,7 +40,11 @@ function History() {
 
     return (
         <>
-            <Container clasename="">
+            <Head>
+                <title>MK-KPS for KASET FAIR : History</title>
+            </Head>
+
+            <Container>
                 <div style={{ maxWidth: '400px' }} className="mx-auto bg-y">
                     <br />
                     <h3 className="text-center">History</h3>

@@ -17,6 +17,9 @@ function Summary() {
     }, []);
     return (
         <>
+            <Head>
+                <title>MK-KPS for KASET FAIR : Summary</title>
+            </Head>
             <Container clasename="">
                 <div style={{ maxWidth: '400px' }} className="mx-auto ">
                     <br />
