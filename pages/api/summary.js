@@ -1,13 +1,7 @@
 import mysqlConnect from '../../services/db';
 
 function timeConverter(UNIX_timestamp) {
-    var a = new Date(UNIX_timestamp * 1000);
-    var year = a.getFullYear().toString().slice(2);
-    var month = a.getMonth() + 1;
-    var date = a.getDate();
-
-    var time = date + '/' + month + '/' + year;
-    return time;
+    return new Date(UNIX_timestamp).toLocaleDateString('th-th');
 }
 
 export default async function handler(req, res) {
