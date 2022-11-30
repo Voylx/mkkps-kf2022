@@ -68,7 +68,8 @@ function Home() {
                         <Image
                             src={img[user.userName]}
                             alt={user.userName}
-                            className="logo w-50"
+                            className="logo"
+                            height={'150'}
                         />
                     </div>
 
@@ -93,7 +94,7 @@ function Home() {
                                                     ? 'paySelected'
                                                     : ''
                                             }`}
-                                            height={'150'}
+                                            height={'120'}
                                             name="payto"
                                         />
                                         <h5 className="text-center">
@@ -115,14 +116,14 @@ function Home() {
                                 type="number"
                                 placeholder="Enter Amount"
                                 pattern="[0-9]*"
-                                disabled={!value.payto}
+                                disabled={!value?.payto}
                                 name="amt"
-                                value={value.amt}
+                                value={value?.amt}
                                 onChange={(event) => handleSetValue(event)}
                             />
                             <Form.Text className="text-muted">
-                                {value.payto
-                                    ? `จ่ายให้ ${value.payto} ${
+                                {value?.payto
+                                    ? `จ่ายให้ ${thaiMenu[value?.payto]} ${
                                           value.amt ? value.amt : 0
                                       } บาท`
                                     : 'ต้องเลือกก่อนว่าจะจ่ายให้ใคร'}
@@ -132,7 +133,7 @@ function Home() {
                         <Button
                             variant="primary"
                             type="submit"
-                            disabled={!value.payto || !value.amt}
+                            disabled={!value?.payto || !value?.amt}
                             className="w-100"
                         >
                             ยืนยัน

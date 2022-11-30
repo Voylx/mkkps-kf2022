@@ -69,7 +69,9 @@ function Login() {
                             type="test"
                             placeholder="Username"
                             onChange={(event) => {
-                                setUsername(event.target.value);
+                                setUsername(
+                                    event.target.value?.toLocaleLowerCase()
+                                );
                             }}
                         />
                     </Form.Group>
